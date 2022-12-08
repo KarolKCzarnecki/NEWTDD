@@ -33,8 +33,14 @@ public class ExceptionHandlers {
     }
 
 
-    @ExceptionHandler(AbcdTestNotFoundException.class)
-    public ResponseEntity<String> handleAbcdTestNotFoundException(AbcdTestNotFoundException e) {
+    @ExceptionHandler(CloseQuizNotFoundException.class)
+    public ResponseEntity<String> handleCloseQuizNotFoundException(CloseQuizNotFoundException e) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+    }
+
+
+    @ExceptionHandler(CollectionOfAbcdTestNotFoundException.class)
+    public ResponseEntity<String> handleCollectionOfAbcdTestNotFoundException(CollectionOfAbcdTestNotFoundException e) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
     }
 

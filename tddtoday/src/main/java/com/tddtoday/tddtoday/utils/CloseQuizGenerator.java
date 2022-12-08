@@ -1,17 +1,17 @@
 package com.tddtoday.tddtoday.utils;
 
-import com.tddtoday.tddtoday.entity.AbcdTestEntity;
+import com.tddtoday.tddtoday.entity.CloseQuizEntity;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
 @UtilityClass
-public class AbcdTestDataGenerator {
+public class CloseQuizGenerator {
 
 
-       public static AbcdTestEntity getExampleAbcdTestEntity() {
-        return AbcdTestEntity.builder()
+       public static CloseQuizEntity getExampleAbcdTestEntity() {
+        return CloseQuizEntity.builder()
                 .question("zaznacz poprawną kolejność przebiegu schematu działania TDD")
                 .answerA("Faza Zielona, Faza Czerwona, Refakotryzacja")
                 .answerB("Faza Czarna, Faza Zielona, Refakotryzacja")

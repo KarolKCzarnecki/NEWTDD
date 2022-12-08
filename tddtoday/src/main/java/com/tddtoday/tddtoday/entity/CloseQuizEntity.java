@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "abcdTests", schema = "public")
-public class AbcdTestEntity {
+@Table(name = "closeQuizes", schema = "public")
+public class CloseQuizEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,16 +34,10 @@ public class AbcdTestEntity {
     private boolean result;
 
     @ManyToOne
-    @JoinColumn(name = "collectionsOfAbcdTest_id")
-    private CollectionOfAbcdTestEntity collection;
+    @JoinColumn(name = "groupCLoseQuizEntity_id")
+    private GroupCloseQuizEntity collection;
 
 
 
-    CollectionOfAbcdTestEntity getCollectionOfAbcdTestEntity() {
-        return collection;
-    }
-
-    void setCollectionOfAbcdTestEntity(final CollectionOfAbcdTestEntity collection) {
-        this.collection = collection;}
 
 }

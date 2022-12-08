@@ -3,14 +3,13 @@ package com.tddtoday.tddtoday.dto;
 
 
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class AbcdTestDTO {
+public class CloseQuizDTO {
 
 
 
