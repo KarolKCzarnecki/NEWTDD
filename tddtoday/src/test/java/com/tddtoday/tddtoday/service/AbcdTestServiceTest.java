@@ -44,7 +44,8 @@ public class AbcdTestServiceTest {
                 .answerB("Faza Czarna, Faza Zielona, Refakotryzacja")
                 .answerC("Refaktoryzacja, Faza Zielona, Faza Czarna")
                 .answerD("Faza Czerwona, Faza Zielona, Refaktoryzacja")
-                .correctAnswer("Faza Czerwona, Faza Zielona, Refaktoryzacja").build();
+                .correctAnswer("Faza Czerwona, Faza Zielona, Refaktoryzacja")
+                .result(true).build();
 
 
         AbcdTestEntity abcdTestEntity = AbcdTestDataGenerator.getExampleAbcdTestEntity();
@@ -66,7 +67,7 @@ public class AbcdTestServiceTest {
         assertEquals("Refaktoryzacja, Faza Zielona, Faza Czarna", capturedAbcdTestEntity.getAnswerC());
         assertEquals("Faza Czerwona, Faza Zielona, Refaktoryzacja", capturedAbcdTestEntity.getAnswerD());
         assertEquals("Faza Czerwona, Faza Zielona, Refaktoryzacja", capturedAbcdTestEntity.getCorrectAnswer());
-
+        assertEquals(true , capturedAbcdTestEntity.getResult());
 
     }
 

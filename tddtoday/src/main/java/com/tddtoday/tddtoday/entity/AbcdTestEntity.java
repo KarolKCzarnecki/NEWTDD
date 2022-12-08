@@ -12,12 +12,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "AbcdTest", schema = "public")
-
+@Table(name = "abcdTests", schema = "public")
 public class AbcdTestEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAbcdTest;
+    private Long id;
 
     private String question;
 
@@ -31,6 +30,20 @@ public class AbcdTestEntity {
 
     private String correctAnswer;
 
+    /// 8.12 ma sprawdzić czy correctAnswer matchuje się z tym co wybrał użytkownik
+    private boolean result;
 
+    @ManyToOne
+    @JoinColumn(name = "collectionsOfAbcdTest_id")
+    private CollectionOfAbcdTestEntity collection;
+
+
+
+    CollectionOfAbcdTestEntity getCollectionOfAbcdTestEntity() {
+        return collection;
+    }
+
+    void setCollectionOfAbcdTestEntity(final CollectionOfAbcdTestEntity collection) {
+        this.collection = collection;}
 
 }

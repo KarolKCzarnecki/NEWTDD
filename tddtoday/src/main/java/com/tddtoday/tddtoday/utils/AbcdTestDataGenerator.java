@@ -17,7 +17,8 @@ public class AbcdTestDataGenerator {
                 .answerB("Faza Czarna, Faza Zielona, Refakotryzacja")
                 .answerC("Refaktoryzacja, Faza Zielona, Faza Czarna")
                 .answerD("Faza Czerwona, Faza Zielona, Refaktoryzacja")
-                .correctAnswer("Faza Czerwona, Faza Zielona, Refaktoryzacja").build();
+                .correctAnswer("Faza Czerwona, Faza Zielona, Refaktoryzacja")
+                .result(true).build();
     }
 
 }

@@ -39,6 +39,12 @@ public class ExceptionHandlers {
     }
 
 
+    @ExceptionHandler(CollectionOfAbcdTestNotFoundException.class)
+    public ResponseEntity<String> handleCollectionOfAbcdTestNotFoundException(CollectionOfAbcdTestNotFoundException e) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+    }
+
+
 
     private List<String> extractErrorsMessage(BindingResult bindingResult) {
         return bindingResult.getAllErrors()
