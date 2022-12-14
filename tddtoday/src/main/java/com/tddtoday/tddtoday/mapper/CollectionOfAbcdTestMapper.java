@@ -1,9 +1,9 @@
 package com.tddtoday.tddtoday.mapper;
 
-import com.tddtoday.tddtoday.dto.CollectionOfAbcdTestDTO;
-import com.tddtoday.tddtoday.entity.CollectionOfAbcdTestEntity;
+import com.tddtoday.tddtoday.dto.GroupCloseQuizDTO;
+import com.tddtoday.tddtoday.entity.GroupCloseQuizEntity;
 
 public interface CollectionOfAbcdTestMapper {
 
-    CollectionOfAbcdTestEntity mapToCollectionOfAbcdTestEntity(CollectionOfAbcdTestDTO collectionOfAbcdTestDTO);
+    GroupCloseQuizEntity mapToCollectionOfAbcdTestEntity(GroupCloseQuizDTO groupCloseQuizDTO);
 }
