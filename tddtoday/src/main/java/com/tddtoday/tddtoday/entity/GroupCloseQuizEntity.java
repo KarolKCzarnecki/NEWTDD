@@ -32,6 +32,8 @@ public class GroupCloseQuizEntity {
     private List<CloseQuizEntity> closeQuiz;
 
 
+    @ManyToMany(mappedBy = "users")
+    private List<UserEntity>user;
 
 
 }

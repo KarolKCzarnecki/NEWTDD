@@ -37,7 +37,7 @@ public class QuizQuestionServiceImpl implements QuizQuestionService {
     }
 
     @Override
-    public void deleteById(long id) {
+    public void deleteQuizById(long id) {
         Optional<CloseQuizEntity> abcdTestEntityOptional = closeQuizRepository.findById(id);
 
         abcdTestEntityOptional.orElseThrow(
@@ -48,7 +48,7 @@ public class QuizQuestionServiceImpl implements QuizQuestionService {
     }
 
     @Override
-    public CloseQuizEntity getById(long id) {
+    public CloseQuizEntity getQuizById(long id) {
         return closeQuizRepository.findById(id).orElseThrow(
                 () -> new CloseQuizNotFoundException("Test abcd with id: %d not found".formatted(id)));
     }

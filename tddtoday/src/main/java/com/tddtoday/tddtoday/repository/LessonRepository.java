@@ -1,14 +1,10 @@
 package com.tddtoday.tddtoday.repository;
 
-import com.tddtoday.tddtoday.entity.CloseQuizEntity;
+
+import com.tddtoday.tddtoday.entity.LessonEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CloseQuizRepository extends JpaRepository<CloseQuizEntity, Long> {
-
-
-
-
-
+public interface LessonRepository  extends JpaRepository<LessonEntity,  Long> {
 }

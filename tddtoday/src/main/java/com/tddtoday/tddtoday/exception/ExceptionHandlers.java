@@ -23,10 +23,6 @@ public class ExceptionHandlers {
                 .body(extractErrorsMessage(e.getBindingResult()));
     }
 
-
-
-
-
     @ExceptionHandler(UserNotFoundException.class)
     public ResponseEntity<String> handleUserNotFoundException(UserNotFoundException e) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
@@ -39,11 +35,16 @@ public class ExceptionHandlers {
     }
 
 
-    @ExceptionHandler(CollectionOfAbcdTestNotFoundException.class)
-    public ResponseEntity<String> handleCollectionOfAbcdTestNotFoundException(CollectionOfAbcdTestNotFoundException e) {
+    @ExceptionHandler(GroupCloseQuizNotFoundException.class)
+    public ResponseEntity<String> handleGroupCloseQuizNotFoundException(GroupCloseQuizNotFoundException e) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
     }
 
+
+    @ExceptionHandler(LessonNotFoundException.class)
+    public ResponseEntity<String> handleLessonNotFoundException(LessonNotFoundException e) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+    }
 
 
     private List<String> extractErrorsMessage(BindingResult bindingResult) {

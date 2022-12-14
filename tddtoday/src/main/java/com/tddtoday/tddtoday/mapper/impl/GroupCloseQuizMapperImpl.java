@@ -17,9 +17,9 @@ public class GroupCloseQuizMapperImpl implements CollectionOfAbcdTestMapper {
     private final ObjectMapper objectMapper;
 
     @Override
-    public GroupCloseQuizEntity mapToCollectionOfAbcdTestEntity(GroupCloseQuizDTO collectionOfabcdtestDTO) {
+    public GroupCloseQuizEntity mapToCollectionOfAbcdTestEntity(GroupCloseQuizDTO groupCloseQuizDTO) {
         log.info("Trying to map CollectionOfAbcdTestDTO -> CollectionOfAbcdTestEntity");
-        return objectMapper.convertValue(collectionOfabcdtestDTO, GroupCloseQuizEntity.class);
+        return objectMapper.convertValue(groupCloseQuizDTO, GroupCloseQuizEntity.class);
     }
 
 }

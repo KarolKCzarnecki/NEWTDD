@@ -8,9 +8,9 @@ public interface QuizQuestionService {
 
     void addCloseQuiz(CloseQuizDTO closeQuizDTO);
 
-    void deleteById(long id);
+    void deleteQuizById(long id);
 
-    CloseQuizEntity getById(long id);
+    CloseQuizEntity getQuizById(long id);
 
 
 
