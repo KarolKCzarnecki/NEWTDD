@@ -1,10 +1,10 @@
 package com.tddtoday.tddtoday.repository;
 
-import com.tddtoday.tddtoday.entity.UserEntity;
+
+import com.tddtoday.tddtoday.entity.LessonEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserEntity, Long> {
+public interface LessonRepository  extends JpaRepository<LessonEntity,  Long> {
 }
-
