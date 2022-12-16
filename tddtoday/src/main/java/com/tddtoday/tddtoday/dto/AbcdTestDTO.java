@@ -32,6 +32,9 @@ public class AbcdTestDTO {
     @NotBlank(message = "Field 'correctAnswer' -> cannot be blank")
     private String correctAnswer;
 
+/// dodane 8.12  ma sprawdzić  czy correct Answer zgadza się z tym co wybierze user
+    private boolean result;
+
 
 
 
