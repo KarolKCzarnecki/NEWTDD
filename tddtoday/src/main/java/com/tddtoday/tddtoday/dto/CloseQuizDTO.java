@@ -1,8 +1,6 @@
 package com.tddtoday.tddtoday.dto;
 
 
-
-
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Data;
@@ -31,11 +29,8 @@ public class CloseQuizDTO {
     @NotBlank(message = "Field 'correctAnswer' -> cannot be blank")
     private String correctAnswer;
 
-/// dodane 8.12  ma sprawdzić  czy correct Answer zgadza się z tym co wybierze user
+    /// dodane 8.12  ma sprawdzić  czy correct Answer zgadza się z tym co wybierze user
     private boolean result;
-
-
-
 
 
 }

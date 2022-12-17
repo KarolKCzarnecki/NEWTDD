@@ -8,7 +8,4 @@ import org.springframework.stereotype.Repository;
 public interface CloseQuizRepository extends JpaRepository<CloseQuizEntity, Long> {
 
 
-
-
-
 }

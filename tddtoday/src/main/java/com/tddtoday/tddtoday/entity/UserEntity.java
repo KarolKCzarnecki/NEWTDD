@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Data
 @Entity
@@ -26,6 +28,6 @@ public class UserEntity {
     private String password;
 
 
-    @ManyToMany(mappedBy ="groupCloseQuizEntity")
-    private List<GroupCloseQuizEntity>group;
+    @ManyToMany(mappedBy = "groupCloseQuizEntity")
+    private List<GroupCloseQuizEntity> group;
 }

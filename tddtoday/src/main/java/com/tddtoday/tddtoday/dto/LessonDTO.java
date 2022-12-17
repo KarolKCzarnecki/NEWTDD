@@ -1,8 +1,6 @@
 package com.tddtoday.tddtoday.dto;
 
 
-
-
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Data;

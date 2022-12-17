@@ -54,10 +54,10 @@ public class QuizQuestionServiceImpl implements QuizQuestionService {
     }
 
 
-
     @Override
     public void updateQuiz(CloseQuizDTO closeQuizDTO) {
-        CloseQuizEntity closeQuizEntity = closeQuizRepository.findById(closeQuizDTO.id);;
+        CloseQuizEntity closeQuizEntity = closeQuizRepository.findById(closeQuizDTO.id);
+        ;
         closeQuizMapper.mapToCloseQuizEntity(closeQuizDTO);
         closeQuizRepository.save(closeQuizEntity);
     }

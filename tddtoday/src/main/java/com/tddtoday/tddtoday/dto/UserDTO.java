@@ -1,7 +1,6 @@
 package com.tddtoday.tddtoday.dto;
 
 
-
 import com.tddtoday.tddtoday.validators.ValidPassword;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,7 +1,6 @@
 package com.tddtoday.tddtoday.service.impl;
 
 
-
 import com.tddtoday.tddtoday.dto.LessonDTO;
 import com.tddtoday.tddtoday.entity.CloseQuizEntity;
 import com.tddtoday.tddtoday.entity.LessonEntity;
@@ -27,9 +26,9 @@ public class LessonServiceImpl implements LessonService {
     @Override
     public void addLesson(LessonDTO lessonDTO) {
 
-        CloseQuizEntity closeQuizEntity = lessonMapper.mapToCloseQuizEntity(lessonDTO);
+        LessonEntity lessonEntity = lessonMapper.mapToLessonEntity(lessonDTO);
 
-        lessonRepository.save(closeQuizEntity);
+        lessonRepository.save(lessonEntity);
     }
 
     @Override

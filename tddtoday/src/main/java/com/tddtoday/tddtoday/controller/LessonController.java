@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/lessons")
 public class LessonController {
 
-private final LessonService lessonService;
+    private final LessonService lessonService;
 
     @DeleteMapping("/delete/{id}")
-        public ResponseEntity<Void> delLesson(@PathVariable long id) {
+    public ResponseEntity<Void> delLesson(@PathVariable long id) {
         log.info("Trying to delete lesson with id: {}", id);
         lessonService.deleteLessonById(id);
         return ResponseEntity.status(HttpStatus.OK).build();
@@ -33,7 +33,6 @@ private final LessonService lessonService;
         return ResponseEntity.status(HttpStatus.OK).build();
 
     }
-
 
 
 }

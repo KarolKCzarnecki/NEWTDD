@@ -37,6 +37,4 @@ public class CloseQuizEntity {
     private GroupCloseQuizEntity groupCloseQuizEntity;
 
 
-
-
 }

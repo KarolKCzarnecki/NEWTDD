@@ -14,7 +14,7 @@ public class GroupCloseQuizDTO {
     private String collectionName;
 
     /// ma zliczać dobre odpowiedzi
-    private  int countCorrectAnswers;
+    private int countCorrectAnswers;
 
     // ma liczyć ile jest odpowiedzi w zestawie
     private int countAllAnswers;

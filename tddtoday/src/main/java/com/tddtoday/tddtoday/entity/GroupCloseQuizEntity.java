@@ -22,18 +22,18 @@ public class GroupCloseQuizEntity {
 
     private String collectionName;
 
-   private  int countCorrectAnswers;
+    private int countCorrectAnswers;
 
-   private int countAllAnswers;
+    private int countAllAnswers;
 
-   private int score;
+    private int score;
 
     @OneToMany(mappedBy = "closeQuizes")
     private List<CloseQuizEntity> closeQuiz;
 
 
     @ManyToMany(mappedBy = "users")
-    private List<UserEntity>user;
+    private List<UserEntity> user;
 
 
 }
